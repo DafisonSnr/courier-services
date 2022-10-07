@@ -1,0 +1,664 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+body {
+    background-color: #ddd;
+}
+.container-fluid {
+    margin: 0px;
+    padding: 0px;
+    position: relative;
+    overflow-x: hidden;
+    transition: margin-left .5s;
+    .account-display{
+        width: 100%;
+        height: 400px;
+        background-color: rgb(30, 28, 28);
+        .acc-holder{
+            width: 80%;
+            display: flex;
+            margin:   0px auto;
+            .name{
+                width: 55%;
+                margin: 20px auto;
+                text-align: left;
+               h3{
+                color: white;
+               }
+            }
+            .profile{
+                text-align: end;
+                margin: 20px 20px 0 0;
+                img{
+                    width: 80px;
+                    border-radius: 100%;
+                }
+            }
+        }
+        .account-container{
+            width: 70%;
+            margin: 0px auto;
+            transform: translate(5%);
+            h5{
+                font-size: 1em;
+                color: #fff;
+            }
+        }
+        .accounts{
+            display: block;
+            .col{
+                background-color: orangered;
+                margin-top: 5px;
+                height: 53px;
+                color: #fff;
+                padding: 10px;
+                text-align: left;
+                line-height: 50%;
+                border-radius: 10px;
+                span{
+                    float: right;
+                }
+                .acc-p{
+                    font-size: 10px;
+                }
+            }
+            // .checking{
+            //     display: flex;
+            // }
+        }
+        .display-icons{
+           width: 60%;
+           margin: 10px 0;
+           ul.icons{
+               display: flex;
+               li{
+                   list-style: none;
+                   a{
+                       text-decoration: none;
+                       display: inline-block;
+                       text-align: center;
+                       font-size: 10px;
+                       padding: 15px;
+                       margin-right: 10px;
+                       color: #fff;
+                       background-color: orangered;
+                       border-radius: 10px;
+                   }
+               }
+            }
+        }
+    }
+    .column{
+        display: grid;
+        grid-template-columns:15% 80%;
+        grid-gap: 10px;
+        height: 1100px;
+        .column-small{
+            height: 100vh;
+            top: -400px;
+            ul{
+                li{
+                    list-style: none;
+                    a{
+                        display: block;
+                        text-decoration: none;
+                        color: rgb(4, 4, 8);
+                        font-weight: 600;
+                        padding: 15px 0px;
+                        i{
+                            margin-right: 10px;
+                        }
+                    }
+                    
+                }
+            }
+        }
+        .menu-list{
+            position: fixed;
+            top: 0px;
+            left: -200px;
+            z-index: 1;
+            width: 200px;
+            height: 100vh;
+            overflow-x: hidden;
+            transition: 0.9s;
+            background-color: #f9f9f9;
+        }
+        .icons-list{
+            display: block;
+            position: relative;
+            top: -400px;
+            background-color: #f9f9f9;
+            height: 110vh;
+            .nav-open{
+                text-align: center;
+                .fa-solid {
+                   position: relative;
+                   left: -20px;
+                   margin: 20px 0;
+                }
+            }
+            i{
+                font-size: 30px!important;
+                margin-left: 15px;
+                cursor: pointer;
+            }
+        }
+        .column-large{
+            .history-container{
+                display: none;
+                .closeBtn{
+                    position: fixed;
+                    top: 20px;
+                    color: red;
+                    font-size: 40px;
+                    cursor: pointer;
+                    &:hover{
+                        color: #fff;
+                    }
+                }
+                &:hover{
+                    overflow-X: auto;
+                }
+                .history{
+                    position: absolute; 
+                    top:100px; width: 
+                    50%;background-color: #ddd;
+                    border: 1px solid #fff;
+                    -webkit-animation: animatezoom;
+                    animation: animatezoom 0.6s;
+                }
+                @-webkit-keyframes animatezoom {
+                    from{transform: scale(0)}
+                    to{transform: scale(1)}
+                }
+                @keyframes animatezoom {
+                    from{transform: scale(0)}
+                    to{transform: scale(1)}
+                }
+            }
+            .dashboard-columns{
+                display: block;
+                .transactions{
+                    h6{
+                        padding: 15px 0px;
+                        color: #000;
+                        border-bottom: 2px solid #ddd;
+                        margin-top: 0;
+                    }
+                    .container{
+                        position: relative;
+                        background-color: #fff;
+                        border: 2px solid rgb(184, 177, 177);
+                        table{
+                            tr{
+                               td{
+                                    hr{
+                                        position: absolute;
+                                        left:0;
+                                        width: 100%;
+                                        background-color: black;
+                                    }
+                                }
+                            }
+                            thead{
+                               tr{
+                                    display: block;
+                                  th{
+                                    display: block;
+                                  }
+                                  td{
+                                    font-size: 0.7em;
+                                  }
+                               }
+                            }
+                        }   
+                    }
+                }
+                .monthly-statement{
+                    position: relative;
+                    hr{
+                        position: absolute;
+                        width:98%;
+                    }
+                    .container{
+                        width: 100%;
+                        margin: 10px auto;
+                        text-align: center;
+                        padding: 15px 0; 
+                        background-color: #fff;
+                        border: 2px solid rgb(184, 177, 177);
+                        .month{
+                            margin-top: 30px;
+                            h6{
+                                color: rgb(110, 108, 108);
+                            }
+                            .cashIn{
+                                font-size: 0.9em;
+                                text-align: left;
+                                margin: 30px 0 0 0;
+                                padding: 0 10px;
+                                span.amount{
+                                    margin-left: 20px;
+                                    font-weight: bold;
+                                }
+                                span.percent{
+                                    float: right;
+                                    color: rgb(9, 9, 242);
+                                }
+                                .progress-bar{
+                                    width: 100%;
+                                    height: 7px;
+                                    margin-top: -10px;
+                                    background-color: rgb(21, 192, 21);
+                                    border-radius: 20px;
+                                }
+                            }
+                            .cashOut{
+                                font-size: 0.9em;
+                                text-align: left;
+                                margin: 30px 0;
+                                padding: 0 10px;
+                                span.amount{
+                                    margin-left: 20px;
+                                    font-weight: bold;
+                                }
+                                span.percent{
+                                    float: right;
+                                    color: rgb(246, 53, 53);
+                                }
+                                .container-bar{
+                                    width: 100%;
+                                    height: 7px;
+                                    margin-top: -10px;
+                                    background-color: #ddd;
+                                    border-radius: 20px;
+                                    .progress-bars{
+                                        width: 65%;
+                                        height: 7px;
+                                        background-color: #f44336;
+                                        border-radius: 20px;
+                                    }
+    
+                                }
+                            }
+                        }
+                    }
+                    .accName{
+                        width: 100%;
+                        margin: 80px  auto 0 auto;
+                      
+                        text-align: left;
+                        h5{
+                            margin-top: 10px;
+                            font-size: 1.3em;
+                            color: #000;
+                            text-align: center;
+                        }
+                        h5:nth-child(2){
+                            color: #818381;
+                            font-size: 0.9em;
+                        }
+                    }
+                    .image-container{
+                        position: relative;
+                        img{
+                            width: 100px;
+                            height: 100px;
+                            border-radius: 100%;
+                        }
+                        i{
+                            position: absolute;
+                            top: 50%;
+                            right: 35%;
+                            width: 40px;
+                            height: 40px;
+                            font-size: 1.5em;
+                            padding: 5px;
+                            color: #fff;
+                            background-color: orangered;
+                            border-radius: 100%;
+                            cursor: pointer;  
+                        }
+                    }
+                }
+                .support{
+                    .container{
+                        text-align: center;
+                        padding: 20px 0;
+                        margin-bottom: 10px;
+                        background-color: #fff;
+                        i{
+                            font-size: 2.5em;
+                            padding: 30px 0;
+                        }
+                        h5{
+                            color: rgb(85, 85, 85);
+                            margin: 30px 0;
+                        }
+                        p{
+                            font-size: 0.9;
+                            padding: 10px;
+                        }
+                        button{
+                            width: 70%;
+                            padding: 8px 0;
+                            color: #fff;
+                            background-color: rgb(59, 59, 239);
+                            border: none;
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+}
+@media (min-width: 375px){
+    .account-display{
+        .acc-holder{
+            width: 100%;
+            .name{
+                h3{
+                    margin-left: 25px;
+                }
+            }
+            img{
+                margin-right: -30px;
+            }
+        }
+    }
+    .display-icons{
+        width: 100%!important;
+        margin-left: 10px!important;
+        ul{
+            justify-content: center;
+        }
+    }
+    .transactions{
+        .container{
+            height: 60vh;
+            table{ 
+              width: 100%;
+                tr{
+                    width: 100%;
+                    td{
+                        span.amount{
+                           float: right;
+                        };
+                      
+                    }
+                }
+            }  
+            .credit,.amount{
+                margin-top: -22px;
+                font-size: 11px;
+            }
+        }
+    }
+
+
+    .monthly-statement{
+        .container{
+            height: 30%;
+            .cashIn{
+                margin-top: -5px!important;
+            }
+            .cashOut{
+                margin-top: 12px!important;
+            }
+            .cashIn{
+                margin-top: -5px!important;
+            }
+        }
+    } 
+    .support{
+        .container{
+            height: 30%;
+        }
+    } 
+}
+@media screen and (min-width: 768px){
+    .container-fluid{
+        .account-display{
+            width: 100%;
+            height: 300px;
+            .acc-holder{
+                width: 100%;
+                display: flex;
+                .name{
+                    position: relative;
+                    h3{
+                        font-size: 2em;
+                    }
+                    width: 55%;
+                    margin: 20px auto;
+                }
+                .profile{
+                    position: absolute;
+                    right: 0;
+                    margin: 15px 50px 0 0px;
+                }
+            }
+            .account-container{
+                width: 75%;
+                margin: 0px auto;
+                transform: translate(15%);
+            }
+            .accounts{
+                display: grid;
+                grid-template-columns: auto auto auto;
+                .col{
+                    margin-right: 20px;
+                }
+            }
+            .display-icons{
+               width: 65%;
+               margin: 40px auto;
+               ul.icons{
+                   float: left;
+                   margin-left: 17.6%;
+                   a{
+                       padding: 15px!important;
+                   }
+               }
+            }
+        }
+        .column{
+            grid-gap: 7%;
+            .column-small{
+                position: relative;
+                top: -300px;
+                .icons-list{
+                    display: none;
+                }
+                .menu-list{
+                    width: 200px;
+                    position: unset;
+                    top:   0px;
+                    left: -200px;
+                    z-index: 6;
+                    height: 1500px; 
+                }
+            }
+        }
+        .column-large{
+            .history{
+                width: 80%;
+                margin: 0 auto!important;
+                transform: translateX(30%);
+               
+            }
+            .dashboard-columns{
+                display: grid!important;
+                grid-template-columns:  40% 25% 25%;
+                grid-gap: 7px;
+                transform: translateX(3%);
+                margin: 20px auto;
+                .transactions{
+                    .container{
+                        height: 43vh!important;
+                        .credit,.amount{
+                            font-size: 13px;
+                        }
+                    }
+                }
+                .monthly-statement{
+                    position: relative;
+                    margin-top: -10px;
+                    .accName{
+                        margin-top: 35px!important;
+                    }
+                    hr{
+                        position: absolute;
+                        width:98%;
+                    }
+                    .container{
+                        margin-bottom: 0px!important;
+                        height: 35vh;
+                        .month{
+                            .cashIn{
+                                margin: 10px 0 0 0!important;
+                                padding: 0 10px;
+                            }
+                            .cashOut{
+                                margin: 8px 0!important;
+                                padding: 0 10px;
+                            }
+                        }
+                    }
+                    .image-container{
+                        i{
+                            right: 10%;
+          
+                        }
+                    }
+                }
+                .support{
+                    .container{
+                        height: 35vh;
+                        padding: 0px!important;
+                        i{
+                            padding: 10px 0!important;
+                        }
+                        h5{
+                            margin: 15px 0!important;
+                        }
+                        p{
+                            font-size: 0.9;
+                            padding:0px 15px!important;
+                        }
+                    }
+                }
+            }
+        }
+    }
+    
+}
+@media (min-width: 280px){
+    .icons-list{
+        .nav-open{
+            i{
+                margin-left: 30px!important;
+            }
+        }
+        i{
+            font-size: 16px!important;
+            margin-left: -25px!important;
+        }
+    }
+    .acc-holder{
+        width: 100%;
+        .name{
+            h3{
+                margin-left: 25px;
+                font-size: 12px;
+            }
+        }   
+        img{
+            
+            margin-left: 85px
+        }  
+    }
+    .display-icons{
+        a{
+            margin-right: -30px;
+        }
+    }
+    .display-icons{
+        margin-left: 20px!important;
+        a{
+            display: inline-block;
+            padding: 5px 10px!important;
+            margin-right: 5px!important;
+
+        }
+    }
+    
+}
+@media (min-width: 1024px){
+   .column{
+       grid-gap: 15%;
+   }
+    .column-large{
+        .dashboard-columns{
+            margin-left: -50px!important;
+        }
+    }
+    .transactions{
+        .container{
+            height:  47vh!important;
+            width: 100%;
+            .credit,.amount{
+              
+                font-size: 14px;
+            }
+        }
+    }
+    .monthly-statement{
+        .container{
+            height: 43vh!important;
+            padding: 30px 0!important;
+            .image-container{
+                i{
+                   left: 55%;
+                }
+            }
+            .month{
+                h6{
+                    margin: 30px 0;
+                }
+               
+            }
+        }
+    }
+    .account-display{
+        .acc-holder{
+            img{
+                margin-right: 20px;
+            }
+        }
+    }
+    .support{
+        .container{
+            height: 43vh!important;
+            p, i, button{
+                margin-top: 50px;
+            }
+        }
+    }
+
+}
+@media (min-width: 1200px) {
+    .column{
+        grid-gap: 1%!important;
+    }
+    
+}
+@media (min-width: 1400px){
+    .menu-list{
+        min-width: 80%;
+    }
+}

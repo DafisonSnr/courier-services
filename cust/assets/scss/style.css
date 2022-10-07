@@ -1,0 +1,71 @@
+@media only screen and (min-width: 768px) {
+  .container-fluid .column .column-large {
+    margin-left: 100px !important;
+    overflow: unset;
+  }
+  .container-fluid .column .column-large .transfer ul.transactions {
+    width: 500px;
+    margin: 70px auto;
+  }
+  .container-fluid .column .column-large .form-list-inputs .brookline-acc .brook-content {
+    width: 40%;
+  }
+  .container-fluid .column .column-large .form-list-inputs .pop-container {
+    margin-left: -45px;
+  }
+  .container-fluid .column .column-large .form-list-inputs .pop-container .form-content {
+    width: 500px;
+    margin: 5% auto 15% 20%;
+  }
+  .container-fluid .column .column-large .form-list-inputs .pop-container .form-content label {
+    margin-left: -150px;
+  }
+  .container-fluid .column .column-large .other-bank {
+    display: none;
+  }
+  .container-fluid .column .column-large .other-bank .form-content {
+    width: 500px;
+    margin: 5% auto 15% 40%;
+  }
+  .container-fluid .column .column-large .other-bank .form-content .saved-click {
+    display: flex;
+  }
+  .container-fluid .column .column-large .other-bank .form-content .saved-click label {
+    width: 100%;
+    margin-top: 5px;
+    margin-left: -170px;
+  }
+  .container-fluid .column .column-large .other-bank .form-content .saved-click input[type=checkbox] {
+    margin-left: -120px;
+  }
+  .container-fluid .column .column-large .spinnerNew .inner-spinNew .spinner-container {
+    width: 100%;
+    position: absolute;
+    left: 10%;
+  }
+  .container-fluid .column .column-large .spinnerNew .inner-spinNew .spinner-container .count-form {
+    top: 10px;
+  }
+  .container-fluid .column .spinnerNew {
+    display: block;
+  }
+  .container-fluid .column .spinnerNew .inner-spinNew {
+    width: 400px;
+    margin: 5% auto 15% 35%;
+  }
+  .container-fluid .column .bill_form {
+    display: block;
+  }
+  .container-fluid .column .bill_form .inner-bill {
+    width: 400px;
+    margin: 5% auto 15% 35%;
+  }
+  .container-fluid .bank-back-container .close-ben-btn {
+    position: absolute;
+    right: 260px;
+  }
+  .container-fluid .bank-back-container .bank-container {
+    width: 450px;
+    margin: 5% auto 15% 37%;
+  }
+}/*# sourceMappingURL=style.css.map */

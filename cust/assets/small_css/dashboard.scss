@@ -1,0 +1,299 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+body {
+    background-color: #ddd;
+}
+.container-fluid{
+    transition: margin-left .5s;
+    .column{
+        display: grid;
+        grid-template-columns:15% 80%;
+        grid-gap: 10px;
+        height: 1100px;
+        .column-small{
+            height: 100vh;
+            top: 0px;
+            ul{
+                li{
+                    list-style: none;
+                    a{
+                        display: block;
+                        text-decoration: none;
+                        color: rgb(4, 4, 8);
+                        font-weight: 600;
+                        padding: 15px 0px;
+                        i{
+                            margin-right: 10px;
+                        }
+                    }
+                }
+            }
+        }
+        .menu-list{
+            position: fixed;
+            top: 0px;
+            left: -200px;
+            z-index: 1;
+            width: 200px;
+            height: 100vh;
+            overflow-x: hidden;
+            transition: 0.9s;
+            background-color: #f9f9f9;
+        }
+        .icons-list{
+            display: block;
+            position: relative;
+            top: 0px;
+            background-color: #f9f9f9;
+            height: 110vh;
+            .nav-open{
+                text-align: center;
+                .fa-solid {
+                   position: relative;
+                   left: -20px;
+                   margin: 20px 0;
+                }
+            }
+            i{
+                font-size: 30px!important;
+                margin-left: 15px;
+                cursor: pointer;
+            }
+        }
+    }
+
+}
+@media (min-width: 375px){
+    .account-display{
+        .acc-holder{
+            width: 100%;
+            .name{
+                h3{
+                    margin-left: 25px;
+                }
+            }
+            img{
+                margin-right: -30px;
+            }
+        }
+    }
+    .display-icons{
+        width: 100%!important;
+        margin-left: 10px!important;
+        ul{
+            justify-content: center;
+        }
+    }
+    .transactions{
+        .container{
+            height: 60vh;
+            table{ 
+              width: 100%;
+                tr{
+                    width: 100%;
+                    td{
+                        span.amount{
+                           float: right;
+                        };
+                      
+                    }
+                }
+            }  
+            .credit,.amount{
+                margin-top: -22px;
+                font-size: 11px;
+            }
+        }
+    }
+
+
+    .monthly-statement{
+        .container{
+            height: 30%;
+            .cashIn{
+                margin-top: -5px!important;
+            }
+            .cashOut{
+                margin-top: 12px!important;
+            }
+            .cashIn{
+                margin-top: -5px!important;
+            }
+        }
+    } 
+    .support{
+        .container{
+            height: 30%;
+        }
+    } 
+}
+@media screen and (min-width: 768px){
+    .container-fluid{
+        .account-display{
+            width: 100%;
+            height: 300px;
+            .acc-holder{
+                width: 100%;
+                display: flex;
+                .name{
+                    position: relative;
+                    h3{
+                        font-size: 2em;
+                    }
+                    width: 55%;
+                    margin: 20px auto;
+                }
+                .profile{
+                    position: absolute;
+                    right: 0;
+                    margin: 15px 50px 0 0px;
+                }
+            }
+            .account-container{
+                width: 75%;
+                margin: 0px auto;
+                transform: translate(15%);
+            }
+            .accounts{
+                display: grid;
+                grid-template-columns: auto auto auto;
+                .col{
+                    margin-right: 20px;
+                }
+            }
+            .display-icons{
+               width: 65%;
+               margin: 40px auto;
+               ul.icons{
+                   float: left;
+                   margin-left: 17.6%;
+                   a{
+                       padding: 15px!important;
+                   }
+               }
+            }
+        }
+        .column{
+            grid-gap: 7%;
+            .column-small{
+                position: relative;
+                top: 10px;
+                .icons-list{
+                    display: none;
+                }
+                .menu-list{
+                    width: 200px;
+                    position: unset;
+                    top:   0px;
+                    left: -200px;
+                    z-index: 6;
+                    height: 1500px; 
+                }
+            }
+        }
+    }
+    
+}
+@media (min-width: 280px){
+    .icons-list{
+        .nav-open{
+            i{
+                margin-left: 30px!important;
+            }
+        }
+        i{
+            font-size: 16px!important;
+            margin-left: -25px!important;
+        }
+    }
+    .acc-holder{
+        width: 100%;
+        .name{
+            h3{
+                margin-left: 25px;
+                font-size: 12px;
+            }
+        }   
+        img{
+            
+            margin-left: 85px
+        }  
+    }
+    .display-icons{
+        a{
+            margin-right: -30px;
+        }
+    }
+    .display-icons{
+        margin-left: 20px!important;
+        a{
+            display: inline-block;
+            padding: 5px 10px!important;
+            margin-right: 5px!important;
+
+        }
+    }
+    
+}
+@media (min-width: 1024px){
+   .column{
+       grid-gap: 15%;
+   }
+    .transactions{
+        .container{
+            height:  47vh!important;
+            width: 100%;
+            .credit,.amount{
+              
+                font-size: 14px;
+            }
+        }
+    }
+    .monthly-statement{
+        .container{
+            height: 43vh!important;
+            padding: 30px 0!important;
+            .image-container{
+                i{
+                   left: 55%;
+                }
+            }
+            .month{
+                h6{
+                    margin: 30px 0;
+                }
+               
+            }
+        }
+    }
+    .account-display{
+        .acc-holder{
+            img{
+                margin-right: 20px;
+            }
+        }
+    }
+    .support{
+        .container{
+            height: 43vh!important;
+            p, i, button{
+                margin-top: 50px;
+            }
+        }
+    }
+
+}
+@media (min-width: 1200px) {
+    .column{
+        grid-gap: 1%!important;
+    }
+    
+}
+@media (min-width: 1400px){
+    .menu-list{
+        min-width: 80%;
+    }
+}

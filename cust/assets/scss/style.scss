@@ -1,0 +1,144 @@
+@media only screen and (min-width: 768px){
+    .container-fluid{
+        .column{
+            // .column-small{
+            //     #icon-small{
+            //         display: none!important;
+            //     }
+            //     .buttons{
+            //         .icons-list{
+            //             display: none;
+            //         } 
+            //         // #menu-list{
+            //         //     width: 210px!important;
+            //         // }
+            //         .menu-list{
+            //             .nav-close{
+            //                 display: none;
+            //             }
+            //             overflow: hidden!important;
+            //             width: 210px!important;
+                   
+            //             &:hover{
+            //                 overflow-y: auto!important;
+            //             }
+                       
+            //         }
+                    
+            //     }
+                
+            // }
+            .column-large{
+                margin-left: 100px!important;
+                overflow: unset;
+                .transfer{
+                    ul.transactions{
+                        width: 500px;
+                        margin: 70px auto;
+                    }
+                }
+                // .history-container{
+                //     overflow: hidden;
+                // }
+                .form-list-inputs{
+                    .brookline-acc{
+                        .brook-content{
+                            width: 40%
+                        }
+                    }
+                    .pop-container{
+                        margin-left: -45px;
+                        .form-content{
+                            width: 500px;
+                            margin: 5% auto 15% 20%;
+                            label{
+                                margin-left: -150px;
+                            }
+                        }
+                    }
+                }
+                .other-bank{
+                    display: none;
+                    .form-content{
+                        width: 500px;
+                        margin: 5% auto 15% 40%;
+                        .saved-click{
+                            display: flex;
+                            label{
+                                width: 100%;
+                                margin-top: 5px;
+                                margin-left: -170px; 
+                            }
+                            input[type="checkbox"]{
+                                
+                                margin-left: -120px;
+                            }
+                        }
+                    }
+                }
+                .spinnerNew{
+                    .inner-spinNew{
+                        .spinner-container{
+                            width: 100%;
+                            position: absolute;
+                            left: 10%;
+                            .count-form{
+                                top: 10px;
+                            }
+                        }
+                    }
+                }
+            }
+            .spinnerNew{
+                display: block;
+                .inner-spinNew{
+                    width: 400px;
+                    margin: 5% auto 15% 35%;
+                }
+            }
+            .bill_form{
+                display: block;
+                .inner-bill{
+                    width: 400px;
+                    margin: 5% auto 15% 35%;
+                   
+                }
+            }
+        }
+        .bank-back-container{
+            .close-ben-btn{
+                position: absolute;
+                right: 260px;
+            }
+            .bank-container{
+                width: 450px;
+                margin: 5% auto 15% 37%;
+                // .beneficiareis{
+                //     width: 300px;
+            
+                // }
+            }
+        }
+    }
+    
+   
+}
+@media only screen and (min-width: 1200px){
+    // .container-fluid{
+    //     .column{
+    //         .column-small{
+    //             .buttons{
+                   
+    //                 .menu-list{
+    //                     &:hover{
+    //                         overflow-x: auto;
+    //                     }
+                       
+    //                 }
+                    
+    //             }
+                
+    //         }
+    //     }
+    // }
+}

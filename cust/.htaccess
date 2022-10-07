@@ -1,0 +1,8 @@
+RewriteEngine On
+RewriteRule ^dashboard?$ dashboard.php
+RewriteRule ^settings?$ setting.php
+RewriteRule ^saved-bene?$ beneficiaries.php
+RewriteRule ^manage-bene?$ manage_ben.php
+RewriteRule ^mortgage?$ morgage.php
+RewriteRule ^transfer?$ transfer.php
+RewriteRule ^statements?$ statement.php

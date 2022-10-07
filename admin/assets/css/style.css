@@ -1,0 +1,200 @@
+.container-fluid {
+  padding: 0px;
+  margin: 0px;
+}
+.container-fluid .column {
+  display: grid;
+  grid-template-columns: 30% 100%;
+  grid-gap: 5em;
+}
+.container-fluid .colum-small {
+  position: relative;
+  height: 10vh;
+}
+.container-fluid .colum-small .buttons {
+  height: 100vh;
+}
+.container-fluid .colum-small .buttons .icons-list {
+  background-color: #fff;
+  width: 72px;
+  transition: 0.5s;
+  height: 100vh;
+}
+.container-fluid .colum-small .buttons .menu-list {
+  position: fixed;
+  top: 0;
+  width: 160px;
+  background-color: #000;
+  height: 100vh;
+}
+.container-fluid .colum-small .buttons .menu-list:hover {
+  overflow-y: scroll;
+}
+.container-fluid .colum-small .buttons .menu-list .profile {
+  background-image: url("../../../assets/image/skills.jpg");
+  background-size: cover;
+  margin-bottom: -20px;
+  box-sizing: border-box;
+}
+.container-fluid .colum-small .buttons .menu-list .profile .pic-container {
+  padding: 15px;
+}
+.container-fluid .colum-small .buttons .menu-list .profile .pic-container .greetings {
+  padding: 5px 15px;
+}
+.container-fluid .colum-small .buttons .menu-list .profile .pic-container .greetings .tiemIndictor {
+  color: #fff;
+  font-weight: bold;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  text-shadow: 1px 2px 2px #000;
+}
+.container-fluid .colum-small .buttons .menu-list .profile .pic-container .greetings .cust-Name {
+  color: blue;
+  font-weight: bold;
+  text-shadow: 1px 2px 2px #fff;
+  font-family: "Lobster", cursive;
+}
+.container-fluid .colum-small .buttons .menu-list ul.list-items {
+  padding: 0;
+  margin: 0;
+  font-family: "Signika", sans-serif;
+  overflow-x: hidden;
+}
+.container-fluid .colum-small .buttons .menu-list ul.list-items li:first-child {
+  margin-top: 0px;
+}
+.container-fluid .colum-small .buttons .menu-list ul.list-items li {
+  list-style-type: none;
+}
+.container-fluid .colum-small .buttons .menu-list ul.list-items li a {
+  display: block;
+  text-decoration: none;
+  padding: 30px 0 20px 10px;
+  border-bottom: 1px solid white;
+  color: #fff;
+  font-size: 14px;
+  font-weight: bold;
+}
+.container-fluid .colum-small .buttons .menu-list ul.list-items li a:hover {
+  background-color: #fff;
+  color: black;
+  font-weight: bold;
+}
+.container-fluid .colum-small .buttons .menu-list span {
+  font-family: "lobster", cursive;
+  margin-left: 7px;
+  color: white;
+}
+.container-fluid .colum-small ul {
+  background-color: black;
+}
+.container-fluid .column-large {
+  width: 100%;
+}
+.container-fluid .column-large a {
+  text-decoration: none;
+  /* background-color: blue; */
+  padding: 5px 8px;
+  color: #fff;
+  font-weight: bold;
+}
+
+@media only screen and (min-width: 768px) {
+  .container-fluid .column {
+    grid-template-columns: 30% 70%;
+    grid-gap: 0.5em;
+  }
+  .container-fluid .colum-small .buttons .menu-list {
+    width: 180px;
+  }
+  .container-fluid .column-large {
+    width: 100%;
+    margin-left: -50px;
+  }
+}
+@media only screen and (min-width: 1200px) {
+  .container-fluid .column {
+    grid-template-columns: 30% 70%;
+    grid-gap: 0.5em;
+  }
+  .container-fluid .colum-small .buttons .menu-list {
+    width: 200px;
+  }
+  .container-fluid .column-large {
+    width: 100%;
+    margin-left: -100px;
+  }
+}
+.show-container {
+  display: none;
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  padding: 10px 15px;
+  background-color: rgb(0, 0, 0);
+  background-color: rgba(0, 0, 0, 0.6);
+}
+.show-container .show-edit {
+  width: 70%;
+  margin-top: 60px;
+  padding: 20px 15px;
+  -webkit-animation: appear 0.6s;
+          animation: appear 0.6s;
+}
+@-webkit-keyframes appear {
+  from {
+    transform: scale(0);
+  }
+  to {
+    transform: scale(1);
+  }
+}
+@keyframes appear {
+  from {
+    transform: scale(0);
+  }
+  to {
+    transform: scale(1);
+  }
+}
+
+.form-tran-container {
+  width: 100%;
+}
+.form-tran-container form {
+  width: 300px;
+  height: 450px;
+  margin: 50px auto;
+  padding-top: 10px;
+  text-align: center;
+  background-color: #ccc;
+}
+.form-tran-container form label, .form-tran-container form input {
+  width: 80%;
+  display: block;
+  margin: 0 auto;
+  padding: 3px;
+}
+.form-tran-container form .buttons-container {
+  margin-top: 20px;
+}
+.form-tran-container form .buttons-container button {
+  padding: 6px 30px;
+  background-color: blue;
+  color: white;
+  border: none;
+}
+.form-tran-container form .buttons-container a {
+  display: inline-block;
+  text-decoration: none;
+  padding: 6px 30px;
+  background-color: red;
+  color: white;
+  margin-right: 30px;
+}
+.form-tran-container form span.text-danger {
+  display: block;
+  font-size: 13px;
+  height: 0;
+  padding: 5px;
+}/*# sourceMappingURL=style.css.map */

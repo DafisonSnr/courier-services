@@ -1,0 +1,252 @@
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #ddd;
+}
+
+.container-fluid {
+  transition: margin-left 0.5s;
+}
+.container-fluid .column {
+  display: grid;
+  grid-template-columns: 15% 80%;
+  grid-gap: 10px;
+  height: 1100px;
+}
+.container-fluid .column .column-small {
+  height: 100vh;
+  top: 0px;
+}
+.container-fluid .column .column-small ul li {
+  list-style: none;
+}
+.container-fluid .column .column-small ul li a {
+  display: block;
+  text-decoration: none;
+  color: rgb(4, 4, 8);
+  font-weight: 600;
+  padding: 15px 0px;
+}
+.container-fluid .column .column-small ul li a i {
+  margin-right: 10px;
+}
+.container-fluid .column .menu-list {
+  position: fixed;
+  top: 0px;
+  left: -200px;
+  z-index: 1;
+  width: 200px;
+  height: 100vh;
+  overflow-x: hidden;
+  transition: 0.9s;
+  background-color: #f9f9f9;
+}
+.container-fluid .column .icons-list {
+  display: block;
+  position: relative;
+  top: 0px;
+  background-color: #f9f9f9;
+  height: 110vh;
+}
+.container-fluid .column .icons-list .nav-open {
+  text-align: center;
+}
+.container-fluid .column .icons-list .nav-open .fa-solid {
+  position: relative;
+  left: -20px;
+  margin: 20px 0;
+}
+.container-fluid .column .icons-list i {
+  font-size: 30px !important;
+  margin-left: 15px;
+  cursor: pointer;
+}
+
+@media (min-width: 375px) {
+  .account-display .acc-holder {
+    width: 100%;
+  }
+  .account-display .acc-holder .name h3 {
+    margin-left: 25px;
+  }
+  .account-display .acc-holder img {
+    margin-right: -30px;
+  }
+  .display-icons {
+    width: 100% !important;
+    margin-left: 10px !important;
+  }
+  .display-icons ul {
+    justify-content: center;
+  }
+  .transactions .container {
+    height: 60vh;
+  }
+  .transactions .container table {
+    width: 100%;
+  }
+  .transactions .container table tr {
+    width: 100%;
+  }
+  .transactions .container table tr td span.amount {
+    float: right;
+  }
+  .transactions .container .credit, .transactions .container .amount {
+    margin-top: -22px;
+    font-size: 11px;
+  }
+  .monthly-statement .container {
+    height: 30%;
+  }
+  .monthly-statement .container .cashIn {
+    margin-top: -5px !important;
+  }
+  .monthly-statement .container .cashOut {
+    margin-top: 12px !important;
+  }
+  .monthly-statement .container .cashIn {
+    margin-top: -5px !important;
+  }
+  .support .container {
+    height: 30%;
+  }
+}
+@media screen and (min-width: 768px) {
+  .container-fluid .account-display {
+    width: 100%;
+    height: 300px;
+  }
+  .container-fluid .account-display .acc-holder {
+    width: 100%;
+    display: flex;
+  }
+  .container-fluid .account-display .acc-holder .name {
+    position: relative;
+    width: 55%;
+    margin: 20px auto;
+  }
+  .container-fluid .account-display .acc-holder .name h3 {
+    font-size: 2em;
+  }
+  .container-fluid .account-display .acc-holder .profile {
+    position: absolute;
+    right: 0;
+    margin: 15px 50px 0 0px;
+  }
+  .container-fluid .account-display .account-container {
+    width: 75%;
+    margin: 0px auto;
+    transform: translate(15%);
+  }
+  .container-fluid .account-display .accounts {
+    display: grid;
+    grid-template-columns: auto auto auto;
+  }
+  .container-fluid .account-display .accounts .col {
+    margin-right: 20px;
+  }
+  .container-fluid .account-display .display-icons {
+    width: 65%;
+    margin: 40px auto;
+  }
+  .container-fluid .account-display .display-icons ul.icons {
+    float: left;
+    margin-left: 17.6%;
+  }
+  .container-fluid .account-display .display-icons ul.icons a {
+    padding: 15px !important;
+  }
+  .container-fluid .column {
+    grid-gap: 7%;
+  }
+  .container-fluid .column .column-small {
+    position: relative;
+    top: 10px;
+  }
+  .container-fluid .column .column-small .icons-list {
+    display: none;
+  }
+  .container-fluid .column .column-small .menu-list {
+    width: 200px;
+    position: unset;
+    top: 0px;
+    left: -200px;
+    z-index: 6;
+    height: 1500px;
+  }
+}
+@media (min-width: 280px) {
+  .icons-list .nav-open i {
+    margin-left: 30px !important;
+  }
+  .icons-list i {
+    font-size: 16px !important;
+    margin-left: -25px !important;
+  }
+  .acc-holder {
+    width: 100%;
+  }
+  .acc-holder .name h3 {
+    margin-left: 25px;
+    font-size: 12px;
+  }
+  .acc-holder img {
+    margin-left: 85px;
+  }
+  .display-icons a {
+    margin-right: -30px;
+  }
+  .display-icons {
+    margin-left: 20px !important;
+  }
+  .display-icons a {
+    display: inline-block;
+    padding: 5px 10px !important;
+    margin-right: 5px !important;
+  }
+}
+@media (min-width: 1024px) {
+  .column {
+    grid-gap: 15%;
+  }
+  .transactions .container {
+    height: 47vh !important;
+    width: 100%;
+  }
+  .transactions .container .credit, .transactions .container .amount {
+    font-size: 14px;
+  }
+  .monthly-statement .container {
+    height: 43vh !important;
+    padding: 30px 0 !important;
+  }
+  .monthly-statement .container .image-container i {
+    left: 55%;
+  }
+  .monthly-statement .container .month h6 {
+    margin: 30px 0;
+  }
+  .account-display .acc-holder img {
+    margin-right: 20px;
+  }
+  .support .container {
+    height: 43vh !important;
+  }
+  .support .container p, .support .container i, .support .container button {
+    margin-top: 50px;
+  }
+}
+@media (min-width: 1200px) {
+  .column {
+    grid-gap: 1% !important;
+  }
+}
+@media (min-width: 1400px) {
+  .menu-list {
+    min-width: 80%;
+  }
+}/*# sourceMappingURL=dashboard.css.map */

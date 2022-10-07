@@ -1,0 +1,91 @@
+<!doctype html>
+<html class="no-js" lang="en">
+<head>
+    <style>
+        ul.first-ul{
+            display: flex;
+           
+        
+        }
+        ul li{
+            list-style: none;
+        }
+        ul.first-ul li.list{
+            position: relative;
+            list-style-type: none;
+            background-color: brown; 
+            height: 35px;
+            display: flex;
+            width: 100%;
+            justify-content: space-around;
+            align-items: center;
+        }
+        ul.first-ul li a{
+            text-decoration: none;
+            color: white;
+            margin: 20px;
+        }
+        .second{
+            position: relative;
+        }
+       
+        ul.first-ul li.list .first ul.first-ul{
+            position: fixed;
+            top: 50px; 
+            left: 0px; 
+            right: 0px;
+            width: 250px;
+            height: 100%;
+            background-color: #ccc;
+            z-index: 1!important;
+            transition: 0.5s;
+        }
+        ul.first-ul li.list .second ul.second-ul{
+            position: fixed;
+            top: 50px; 
+            left: 100px; 
+            right: 0px;
+            width: 250px;
+            height: 100%;
+            background-color: #ccc;
+            z-index: 1!important;
+            transition: 0.5s;
+        }
+        ul.first-ul li.list:hover .first{
+            height: 40%;
+        }
+    </style>;
+</head>
+<body>
+    <ul class="first-ul">
+        <li class="list"> <a href="AboutUs.html">About Us</a>
+            <div class="first">
+                <ul class="first-ul">
+                    <li><a href="AboutUs.html">About Us</a></li>
+                    <li><a href="SeniorManagementTeam.html">Senior Management</a></li>
+                    <li><a href="BoardofDirectors.html">Board of Directors</a></li>
+                </ul>
+            </div>
+        </li>
+        <li class="list"> <a href="#">Personal</a>
+            <div class="second">
+                <ul class="second-ul">
+                    <li><a href="PersonalChecking.html">Personal Checking</a></li>
+                    <li><a href="SeniorInterestChecking.html">Senior Interest Checking</a></li>
+                    <li><a href="PersonalMoneyMarket.html">Personal Money Market</a></li>
+                    <li><a href="PersonalSavingsAccounts.html">Personal Savings</a></li>
+                    <li><a href="PersonalCDAccounts.html">Personal CD</a></li>
+                    <li><a href="PersonalIRAAccount.html">IRA</a></li>
+                    <li><a href="HolidaySavingsAccount.html">Holiday Club</a></li>
+                    <li><a href="PersonalLoans.html">Personal Loans</a></li>
+                    <li><a href="PersonalAccountServices.html">Personal Account Services</a></li>
+                </ul>
+            </div>
+        </li>
+    </ul>
+
+
+
+  
+</body>
+</html>

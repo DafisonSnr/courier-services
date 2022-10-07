@@ -1,0 +1,592 @@
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #ddd;
+}
+
+.container-fluid {
+  margin: 0px;
+  padding: 0px;
+  position: relative;
+  overflow-x: hidden;
+  transition: margin-left 0.5s;
+}
+.container-fluid .account-display {
+  width: 100%;
+  height: 400px;
+  background-color: rgb(30, 28, 28);
+}
+.container-fluid .account-display .acc-holder {
+  width: 80%;
+  display: flex;
+  margin: 0px auto;
+}
+.container-fluid .account-display .acc-holder .name {
+  width: 55%;
+  margin: 20px auto;
+  text-align: left;
+}
+.container-fluid .account-display .acc-holder .name h3 {
+  color: white;
+}
+.container-fluid .account-display .acc-holder .profile {
+  text-align: end;
+  margin: 20px 20px 0 0;
+}
+.container-fluid .account-display .acc-holder .profile img {
+  width: 80px;
+  border-radius: 100%;
+}
+.container-fluid .account-display .account-container {
+  width: 70%;
+  margin: 0px auto;
+  transform: translate(5%);
+}
+.container-fluid .account-display .account-container h5 {
+  font-size: 1em;
+  color: #fff;
+}
+.container-fluid .account-display .accounts {
+  display: block;
+}
+.container-fluid .account-display .accounts .col {
+  background-color: orangered;
+  margin-top: 5px;
+  height: 53px;
+  color: #fff;
+  padding: 10px;
+  text-align: left;
+  line-height: 50%;
+  border-radius: 10px;
+}
+.container-fluid .account-display .accounts .col span {
+  float: right;
+}
+.container-fluid .account-display .accounts .col .acc-p {
+  font-size: 10px;
+}
+.container-fluid .account-display .display-icons {
+  width: 60%;
+  margin: 10px 0;
+}
+.container-fluid .account-display .display-icons ul.icons {
+  display: flex;
+}
+.container-fluid .account-display .display-icons ul.icons li {
+  list-style: none;
+}
+.container-fluid .account-display .display-icons ul.icons li a {
+  text-decoration: none;
+  display: inline-block;
+  text-align: center;
+  font-size: 10px;
+  padding: 15px;
+  margin-right: 10px;
+  color: #fff;
+  background-color: orangered;
+  border-radius: 10px;
+}
+.container-fluid .column {
+  display: grid;
+  grid-template-columns: 15% 80%;
+  grid-gap: 10px;
+  height: 1100px;
+}
+.container-fluid .column .column-small {
+  height: 100vh;
+  top: -400px;
+}
+.container-fluid .column .column-small ul li {
+  list-style: none;
+}
+.container-fluid .column .column-small ul li a {
+  display: block;
+  text-decoration: none;
+  color: rgb(4, 4, 8);
+  font-weight: 600;
+  padding: 15px 0px;
+}
+.container-fluid .column .column-small ul li a i {
+  margin-right: 10px;
+}
+.container-fluid .column .menu-list {
+  position: fixed;
+  top: 0px;
+  left: -200px;
+  z-index: 1;
+  width: 200px;
+  height: 100vh;
+  overflow-x: hidden;
+  transition: 0.9s;
+  background-color: #f9f9f9;
+}
+.container-fluid .column .icons-list {
+  display: block;
+  position: relative;
+  top: -400px;
+  background-color: #f9f9f9;
+  height: 110vh;
+}
+.container-fluid .column .icons-list .nav-open {
+  text-align: center;
+}
+.container-fluid .column .icons-list .nav-open .fa-solid {
+  position: relative;
+  left: -20px;
+  margin: 20px 0;
+}
+.container-fluid .column .icons-list i {
+  font-size: 30px !important;
+  margin-left: 15px;
+  cursor: pointer;
+}
+.container-fluid .column .column-large .history-container {
+  display: none;
+}
+.container-fluid .column .column-large .history-container .closeBtn {
+  position: fixed;
+  top: 20px;
+  color: red;
+  font-size: 40px;
+  cursor: pointer;
+}
+.container-fluid .column .column-large .history-container .closeBtn:hover {
+  color: #fff;
+}
+.container-fluid .column .column-large .history-container:hover {
+  overflow-X: auto;
+}
+.container-fluid .column .column-large .history-container .history {
+  position: absolute;
+  top: 100px;
+  width: 50%;
+  background-color: #ddd;
+  border: 1px solid #fff;
+  -webkit-animation: animatezoom;
+  animation: animatezoom 0.6s;
+}
+@-webkit-keyframes animatezoom {
+  from {
+    transform: scale(0);
+  }
+  to {
+    transform: scale(1);
+  }
+}
+@keyframes animatezoom {
+  from {
+    transform: scale(0);
+  }
+  to {
+    transform: scale(1);
+  }
+}
+.container-fluid .column .column-large .dashboard-columns {
+  display: block;
+}
+.container-fluid .column .column-large .dashboard-columns .transactions h6 {
+  padding: 15px 0px;
+  color: #000;
+  border-bottom: 2px solid #ddd;
+  margin-top: 0;
+}
+.container-fluid .column .column-large .dashboard-columns .transactions .container {
+  position: relative;
+  background-color: #fff;
+  border: 2px solid rgb(184, 177, 177);
+}
+.container-fluid .column .column-large .dashboard-columns .transactions .container table tr td hr {
+  position: absolute;
+  left: 0;
+  width: 100%;
+  background-color: black;
+}
+.container-fluid .column .column-large .dashboard-columns .transactions .container table thead tr {
+  display: block;
+}
+.container-fluid .column .column-large .dashboard-columns .transactions .container table thead tr th {
+  display: block;
+}
+.container-fluid .column .column-large .dashboard-columns .transactions .container table thead tr td {
+  font-size: 0.7em;
+}
+.container-fluid .column .column-large .dashboard-columns .monthly-statement {
+  position: relative;
+}
+.container-fluid .column .column-large .dashboard-columns .monthly-statement hr {
+  position: absolute;
+  width: 98%;
+}
+.container-fluid .column .column-large .dashboard-columns .monthly-statement .container {
+  width: 100%;
+  margin: 10px auto;
+  text-align: center;
+  padding: 15px 0;
+  background-color: #fff;
+  border: 2px solid rgb(184, 177, 177);
+}
+.container-fluid .column .column-large .dashboard-columns .monthly-statement .container .month {
+  margin-top: 30px;
+}
+.container-fluid .column .column-large .dashboard-columns .monthly-statement .container .month h6 {
+  color: rgb(110, 108, 108);
+}
+.container-fluid .column .column-large .dashboard-columns .monthly-statement .container .month .cashIn {
+  font-size: 0.9em;
+  text-align: left;
+  margin: 30px 0 0 0;
+  padding: 0 10px;
+}
+.container-fluid .column .column-large .dashboard-columns .monthly-statement .container .month .cashIn span.amount {
+  margin-left: 20px;
+  font-weight: bold;
+}
+.container-fluid .column .column-large .dashboard-columns .monthly-statement .container .month .cashIn span.percent {
+  float: right;
+  color: rgb(9, 9, 242);
+}
+.container-fluid .column .column-large .dashboard-columns .monthly-statement .container .month .cashIn .progress-bar {
+  width: 100%;
+  height: 7px;
+  margin-top: -10px;
+  background-color: rgb(21, 192, 21);
+  border-radius: 20px;
+}
+.container-fluid .column .column-large .dashboard-columns .monthly-statement .container .month .cashOut {
+  font-size: 0.9em;
+  text-align: left;
+  margin: 30px 0;
+  padding: 0 10px;
+}
+.container-fluid .column .column-large .dashboard-columns .monthly-statement .container .month .cashOut span.amount {
+  margin-left: 20px;
+  font-weight: bold;
+}
+.container-fluid .column .column-large .dashboard-columns .monthly-statement .container .month .cashOut span.percent {
+  float: right;
+  color: rgb(246, 53, 53);
+}
+.container-fluid .column .column-large .dashboard-columns .monthly-statement .container .month .cashOut .container-bar {
+  width: 100%;
+  height: 7px;
+  margin-top: -10px;
+  background-color: #ddd;
+  border-radius: 20px;
+}
+.container-fluid .column .column-large .dashboard-columns .monthly-statement .container .month .cashOut .container-bar .progress-bars {
+  width: 65%;
+  height: 7px;
+  background-color: #f44336;
+  border-radius: 20px;
+}
+.container-fluid .column .column-large .dashboard-columns .monthly-statement .accName {
+  width: 100%;
+  margin: 80px auto 0 auto;
+  text-align: left;
+}
+.container-fluid .column .column-large .dashboard-columns .monthly-statement .accName h5 {
+  margin-top: 10px;
+  font-size: 1.3em;
+  color: #000;
+  text-align: center;
+}
+.container-fluid .column .column-large .dashboard-columns .monthly-statement .accName h5:nth-child(2) {
+  color: #818381;
+  font-size: 0.9em;
+}
+.container-fluid .column .column-large .dashboard-columns .monthly-statement .image-container {
+  position: relative;
+}
+.container-fluid .column .column-large .dashboard-columns .monthly-statement .image-container img {
+  width: 100px;
+  height: 100px;
+  border-radius: 100%;
+}
+.container-fluid .column .column-large .dashboard-columns .monthly-statement .image-container i {
+  position: absolute;
+  top: 50%;
+  right: 35%;
+  width: 40px;
+  height: 40px;
+  font-size: 1.5em;
+  padding: 5px;
+  color: #fff;
+  background-color: orangered;
+  border-radius: 100%;
+  cursor: pointer;
+}
+.container-fluid .column .column-large .dashboard-columns .support .container {
+  text-align: center;
+  padding: 20px 0;
+  margin-bottom: 10px;
+  background-color: #fff;
+}
+.container-fluid .column .column-large .dashboard-columns .support .container i {
+  font-size: 2.5em;
+  padding: 30px 0;
+}
+.container-fluid .column .column-large .dashboard-columns .support .container h5 {
+  color: rgb(85, 85, 85);
+  margin: 30px 0;
+}
+.container-fluid .column .column-large .dashboard-columns .support .container p {
+  font-size: 0.9;
+  padding: 10px;
+}
+.container-fluid .column .column-large .dashboard-columns .support .container button {
+  width: 70%;
+  padding: 8px 0;
+  color: #fff;
+  background-color: rgb(59, 59, 239);
+  border: none;
+}
+
+@media (min-width: 375px) {
+  .account-display .acc-holder {
+    width: 100%;
+  }
+  .account-display .acc-holder .name h3 {
+    margin-left: 25px;
+  }
+  .account-display .acc-holder img {
+    margin-right: -30px;
+  }
+  .display-icons {
+    width: 100% !important;
+    margin-left: 10px !important;
+  }
+  .display-icons ul {
+    justify-content: center;
+  }
+  .transactions .container {
+    height: 60vh;
+  }
+  .transactions .container table {
+    width: 100%;
+  }
+  .transactions .container table tr {
+    width: 100%;
+  }
+  .transactions .container table tr td span.amount {
+    float: right;
+  }
+  .transactions .container .credit, .transactions .container .amount {
+    margin-top: -22px;
+    font-size: 11px;
+  }
+  .monthly-statement .container {
+    height: 30%;
+  }
+  .monthly-statement .container .cashIn {
+    margin-top: -5px !important;
+  }
+  .monthly-statement .container .cashOut {
+    margin-top: 12px !important;
+  }
+  .monthly-statement .container .cashIn {
+    margin-top: -5px !important;
+  }
+  .support .container {
+    height: 30%;
+  }
+}
+@media screen and (min-width: 768px) {
+  .container-fluid .account-display {
+    width: 100%;
+    height: 300px;
+  }
+  .container-fluid .account-display .acc-holder {
+    width: 100%;
+    display: flex;
+  }
+  .container-fluid .account-display .acc-holder .name {
+    position: relative;
+    width: 55%;
+    margin: 20px auto;
+  }
+  .container-fluid .account-display .acc-holder .name h3 {
+    font-size: 2em;
+  }
+  .container-fluid .account-display .acc-holder .profile {
+    position: absolute;
+    right: 0;
+    margin: 15px 50px 0 0px;
+  }
+  .container-fluid .account-display .account-container {
+    width: 75%;
+    margin: 0px auto;
+    transform: translate(15%);
+  }
+  .container-fluid .account-display .accounts {
+    display: grid;
+    grid-template-columns: auto auto auto;
+  }
+  .container-fluid .account-display .accounts .col {
+    margin-right: 20px;
+  }
+  .container-fluid .account-display .display-icons {
+    width: 65%;
+    margin: 40px auto;
+  }
+  .container-fluid .account-display .display-icons ul.icons {
+    float: left;
+    margin-left: 17.6%;
+  }
+  .container-fluid .account-display .display-icons ul.icons a {
+    padding: 15px !important;
+  }
+  .container-fluid .column {
+    grid-gap: 7%;
+  }
+  .container-fluid .column .column-small {
+    position: relative;
+    top: -300px;
+  }
+  .container-fluid .column .column-small .icons-list {
+    display: none;
+  }
+  .container-fluid .column .column-small .menu-list {
+    width: 200px;
+    position: unset;
+    top: 0px;
+    left: -200px;
+    z-index: 6;
+    height: 1500px;
+  }
+  .container-fluid .column-large .history {
+    width: 80%;
+    margin: 0 auto !important;
+    transform: translateX(30%);
+  }
+  .container-fluid .column-large .dashboard-columns {
+    display: grid !important;
+    grid-template-columns: 40% 25% 25%;
+    grid-gap: 7px;
+    transform: translateX(3%);
+    margin: 20px auto;
+  }
+  .container-fluid .column-large .dashboard-columns .transactions .container {
+    height: 43vh !important;
+  }
+  .container-fluid .column-large .dashboard-columns .transactions .container .credit, .container-fluid .column-large .dashboard-columns .transactions .container .amount {
+    font-size: 13px;
+  }
+  .container-fluid .column-large .dashboard-columns .monthly-statement {
+    position: relative;
+    margin-top: -10px;
+  }
+  .container-fluid .column-large .dashboard-columns .monthly-statement .accName {
+    margin-top: 35px !important;
+  }
+  .container-fluid .column-large .dashboard-columns .monthly-statement hr {
+    position: absolute;
+    width: 98%;
+  }
+  .container-fluid .column-large .dashboard-columns .monthly-statement .container {
+    margin-bottom: 0px !important;
+    height: 35vh;
+  }
+  .container-fluid .column-large .dashboard-columns .monthly-statement .container .month .cashIn {
+    margin: 10px 0 0 0 !important;
+    padding: 0 10px;
+  }
+  .container-fluid .column-large .dashboard-columns .monthly-statement .container .month .cashOut {
+    margin: 8px 0 !important;
+    padding: 0 10px;
+  }
+  .container-fluid .column-large .dashboard-columns .monthly-statement .image-container i {
+    right: 10%;
+  }
+  .container-fluid .column-large .dashboard-columns .support .container {
+    height: 35vh;
+    padding: 0px !important;
+  }
+  .container-fluid .column-large .dashboard-columns .support .container i {
+    padding: 10px 0 !important;
+  }
+  .container-fluid .column-large .dashboard-columns .support .container h5 {
+    margin: 15px 0 !important;
+  }
+  .container-fluid .column-large .dashboard-columns .support .container p {
+    font-size: 0.9;
+    padding: 0px 15px !important;
+  }
+}
+@media (min-width: 280px) {
+  .icons-list .nav-open i {
+    margin-left: 30px !important;
+  }
+  .icons-list i {
+    font-size: 16px !important;
+    margin-left: -25px !important;
+  }
+  .acc-holder {
+    width: 100%;
+  }
+  .acc-holder .name h3 {
+    margin-left: 25px;
+    font-size: 12px;
+  }
+  .acc-holder img {
+    margin-left: 85px;
+  }
+  .display-icons a {
+    margin-right: -30px;
+  }
+  .display-icons {
+    margin-left: 20px !important;
+  }
+  .display-icons a {
+    display: inline-block;
+    padding: 5px 10px !important;
+    margin-right: 5px !important;
+  }
+}
+@media (min-width: 1024px) {
+  .column {
+    grid-gap: 15%;
+  }
+  .column-large .dashboard-columns {
+    margin-left: -50px !important;
+  }
+  .transactions .container {
+    height: 47vh !important;
+    width: 100%;
+  }
+  .transactions .container .credit, .transactions .container .amount {
+    font-size: 14px;
+  }
+  .monthly-statement .container {
+    height: 43vh !important;
+    padding: 30px 0 !important;
+  }
+  .monthly-statement .container .image-container i {
+    left: 55%;
+  }
+  .monthly-statement .container .month h6 {
+    margin: 30px 0;
+  }
+  .account-display .acc-holder img {
+    margin-right: 20px;
+  }
+  .support .container {
+    height: 43vh !important;
+  }
+  .support .container p, .support .container i, .support .container button {
+    margin-top: 50px;
+  }
+}
+@media (min-width: 1200px) {
+  .column {
+    grid-gap: 1% !important;
+  }
+}
+@media (min-width: 1400px) {
+  .menu-list {
+    min-width: 80%;
+  }
+}/*# sourceMappingURL=dashboard.css.map */

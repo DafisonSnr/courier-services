@@ -1,0 +1,1491 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    overflow-x: hidden;
+}
+
+// Personal Banking styling
+main{
+    width: 100%;
+    margin: 150px auto 0 auto;
+// Investment page
+    section.investment{
+        .investment-container{
+            position: relative;
+            background-image: url("./../image/manonphone.jpg");
+            background-repeat: no-repeat;
+            background-size: cover;
+            width: 100%;
+            height: 80vh;
+            h3{
+                position: absolute;
+                top: 50%;
+                transform: translateY(-50%);
+                font-family: monospace;
+                font-weight: bold;
+                font-size: 2.5em;
+                color: #fff;
+            }
+            p{
+                position: absolute;
+                top: 60%;
+                font-family: Arial, Helvetica, sans-serif;
+                font-size: 1.2em;
+                color: #fff;
+                
+            }
+            
+        }
+    }
+    section.business{
+        .business-container{
+            position: relative;
+            background-image: url("./../image/christian.jpg");
+            background-repeat: no-repeat;
+            background-size: cover;
+            width: 100%;
+            height: 80vh;
+            h3{
+                position: absolute;
+                top: 50%;
+                transform: translateY(-50%);
+                font-family: monospace;
+                font-weight: bold;
+                font-size: 2.5em;
+                color: #fff;
+            }
+            p{
+                position: absolute;
+                top: 60%;
+                font-family: Arial, Helvetica, sans-serif;
+                font-size: 1em;
+                color: #fff;
+            }
+            
+        }
+    }
+
+    section.commercial{
+        .commercial-container{
+            position: relative;
+            background-image: url("./../image/team.jpg");
+            background-repeat: no-repeat;
+            background-size: cover;
+            width: 100%;
+            height: 50vh;
+            h3{
+                position: absolute;
+                top: 50%;
+                transform: translateY(-50%);
+                font-family: monospace;
+                font-weight: bold;
+                font-size: 2.5em;
+                color: #fff;
+            }
+            p{
+                position: absolute;
+                top: 60%;
+                font-family: Arial, Helvetica, sans-serif;
+                font-size: 1.2em;
+                color: #fff;
+                
+            }
+            
+        }
+    }
+    section.commercial{
+        .container{
+            ul.commercial-list{
+                margin-top: 70px;
+                margin-bottom: 100px;
+                li{
+                    text-align: center;
+                    margin-top: 15px;
+                    padding: 25px;
+                    background-color: #f3f4f5;
+                    h6{
+                        font-weight: bold;
+                        color: orangered;
+                    }
+                }
+            }
+        }
+    }
+    section.loan{
+        .loan-container{
+            position: relative;
+            background-image: url("./../image/directors.jpg");
+            background-repeat: no-repeat;
+            background-size: cover;
+            width: 100%;
+            height: 30vh;
+            h3{
+                position: absolute;
+                top: 50%;
+                transform: translateY(-50%);
+                font-family: monospace;
+                font-weight: bold;
+                font-size: 2.5em;
+                color: #fff;
+            }
+            p{
+                position: absolute;
+                top: 60%;
+                font-family: Arial, Helvetica, sans-serif;
+                font-size: 1.2em;
+                color: #fff;
+                
+            }
+            
+        }
+    }
+    section.money{
+        .money-container{
+            position: relative;
+            background-image: url("./../image/cash-cent.jpg");
+            background-repeat: no-repeat;
+            background-size: cover;
+            width: 100%;
+            height: 40vh;
+            h3{
+                position: absolute;
+                top: 50%;
+                transform: translateY(-50%);
+                font-family: monospace;
+                font-weight: bold;
+                font-size: 2.5em;
+                color: #fff;
+            }
+            p{
+                position: absolute;
+                top: 60%;
+                font-family: Arial, Helvetica, sans-serif;
+                font-size: 1.2em;
+                color: #fff;
+                
+            }
+            
+        }
+    }
+    section.information{
+        .container{
+            .grid-container{
+                margin-top: 50px;
+                .grid1{
+                    ul.grid1-container{
+                        width: 100%;
+                        padding: 0;
+                       
+                        li{
+                            list-style: none;
+                            a{
+                                display: block;
+                                text-decoration: none;
+                                margin-top: 5px;
+                                color: #000;
+                                background-color: #f3f4f5;
+                                padding: 15px 10px;
+                                &:hover {
+                                    opacity: 0.6;
+                                }
+                            }
+                        }
+                    }
+                }
+                .grid2{
+                    .grid2-container{
+                        
+                        border: 1px solid #ccc;
+                        padding: 30px 15px;
+                        background-color: #f9f9f9;
+                        h4{
+                            font-size: 30px;
+                            font-family: Arial, Helvetica, sans-serif;
+                            font-weight: bold;
+                            color: orangered;
+                        }
+                        p{
+                            font-size: 15px;
+                        }
+                    }
+                }
+                .grid3{
+                    .grid3-container{
+                        width: 95%;
+                        margin: 0 auto;
+                        h3{
+                            font-size: 35px;
+                            font-weight: bold;
+                            color: orangered;
+                        }
+                        p{
+                            font-size: 18px;
+                        }
+                        .image{
+                            img{
+                                width: 100%;
+                            }
+                        }
+                        .advisor{
+                            h4{
+                                margin-top: 30px;
+                                color: orangered;
+                                font-weight: bold;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+    section.accounts{
+        .container{
+            ul.accounts-list{
+                margin-top: 70px;
+                margin-bottom: 100px;
+                li{
+                    text-align: center;
+                    margin-top: 15px;
+                    padding: 25px;
+                    background-color: #f3f4f5;
+                    h6{
+                        font-weight: bold;
+                        color: orangered;
+                    }
+                }
+            }
+        }
+    }
+}
+
+// Personal banking endes here 
+
+// contact us styling starts here
+section.bank-details {
+    .container{
+        width: 100%;
+        margin: 0 auto;
+        ul.details{
+            width: 100%;
+            text-align: center;
+            margin-top: 80px;
+            li{
+                list-style: none;
+                margin-top: 10px;
+                h4{
+                    color: orangered;
+                    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+                    font-weight: bold;
+                }
+                p{
+                    font-size: 18px;
+
+                    &:last-child{
+                        color: orangered;
+                        font-weight: bold;
+                    }
+                }
+                .brook{
+                    color: orangered;
+                    font-weight: bold;
+                }
+
+            }
+            
+        }
+    }
+}
+
+
+
+// nav close transition
+#works{
+    transition: margin-right .5s!important;
+}
+
+// about us styling starts here
+nav{
+    .navigation-bar{
+        width: 100%;
+        .bank-info{
+            background-color: rgb(36, 31, 31);
+            ul.phone{
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                li{
+                    list-style: none;
+                    
+                    a{
+                        text-decoration: none;
+                        display: inline-block;
+                        padding: 5px;
+                        color: #fff;
+                        width: 100%;
+
+                    }
+                }
+            }
+        }
+    }
+    .navigation-list{
+        .brand-logo{
+            position: fixed;
+            background-color: #fff;
+            display: flex;
+            justify-content: space-between;
+            width: 100%;
+            height: 150px;
+            z-index: 99;
+            opacity: 0.8;
+            span{
+                margin-right: 40px;
+                margin-top: 10px;
+                font-size: 40px;
+                font-weight: bolder;
+                color: #000;
+                cursor: pointer;
+            }
+        }
+        .list-container{
+            display: block;
+            width: 100%;
+        }
+       .brand-logo{
+           img{
+               width: 200px;
+           }
+        }
+        ul.list{
+            width: 0px;
+            position: fixed;
+            top: 0;
+            right: 0;
+            padding: 0;
+            background-color: #2f2f39;
+            height: 100vh;
+            z-index: 99;
+            transition: 0.6s ease;
+            
+            // span.nav-close{
+            //     display: block;
+            //     font-size: 40px;
+            //     color: #f00;
+            //     margin-bottom: -10px;
+            //     text-align: right;                
+            // }
+            li{
+                list-style: none;
+            }
+            a{
+                display: block;
+                text-decoration: none;
+                
+                padding: 20px 50px;
+                color: #fff;
+                border-bottom: 1px solid rgba(255,255,255,0.4);
+                &:hover{
+                    color: orangered;
+                }
+            }
+            .online{
+                margin-top: 20px;
+                background-color: orangered;
+                border-radius:  100px;
+                a{
+                    color: #fff;
+                    padding: 10px;
+                    i{
+                        margin: 0 8px;
+
+                    }
+                }
+                &:hover{
+                    color: none!important;
+                }
+               
+            }
+        }
+    }
+} 
+section.about-info{
+    .aboutUs-container{
+        background-image: url('./../image/Inner-Banner-Background-Image-1.jpeg');
+        background-repeat: no-repeat;
+        background-size: cover;
+        margin-top: 155px;
+        height: 150px;
+        .container{
+            margin-left: 30px;
+            padding: 10px;
+            .aboutUs{
+                p{
+                    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+                    font-size: 50px;
+                    font-weight: bold;
+                    color: #000;
+                }
+            }
+            .home{
+                a{
+                    display: inline-block;
+                    text-decoration: none;
+                    margin-top: 10px;
+                    color: #000;
+                    &:hover{
+                        opacity: 0.5;
+                    }
+                }
+                
+            }
+        }
+    }
+}
+article{
+    .container{
+        width: 100%;
+        margin: 0 auto;
+        .brand-container{
+            display: block;
+            width: 100%;
+            margin: 90px auto;
+            .first{
+                .aboutus{
+                    text-align: center;
+                    h4{
+                        font-size: 20px;
+                        color: orangered;
+                        font-weight: bold;
+                    }
+                    h3{
+                        font-size: 35px;
+                        color: orangered;
+                        font-weight: bold;
+                    }
+                }
+            }
+            .line-container{
+                display: flex;
+                justify-content: center;
+                margin: 20px 0 50px 0;
+                .first-line{
+                    border: 1px solid orangered;
+                    width: 70px;
+                    height: 1px;
+                }
+                .circle{
+                    width: 10px;
+                    height: 10px;
+                    border: 2px solid orangered;
+                    border-radius: 100%;
+                    margin: -5px 10px 0 10px;
+                }
+                .second-line{
+                    border: 1px solid orangered;
+                    width: 70px;
+                    height: 1px;
+                }
+            }
+            .second{
+                p{
+                    font-size: 18px;
+                }
+            }
+        }
+    }
+    .review{
+        .review-container{
+            .container{
+                width: 100%;
+                ul.rev{
+                    display: block;
+                    li{
+                        list-style: none;
+                        width: 100%;
+                        text-align: center;
+                        margin: 15px 0px;
+                        padding: 50px 10px;
+                        background-color: #f9f9f9 ;
+                        box-sizing: border-box;
+                        h4{
+                            color: orangered;
+                        }
+                    }
+                }
+                .company-overview{
+                    text-align: center;
+                    margin-top: 80px;
+                    h3{
+                        color: orangered;
+                        font-size: 19px;
+                    }
+                    .line-container{
+                        display: flex;
+                        justify-content: center;
+                        text-align: center;
+                        margin-top: 30px;
+                        .first-line{
+                            border: 1px solid orangered;
+                            width: 60px;
+                            height: 1px;
+                        }
+                        .circle{
+                        width: 10px;
+                        height: 10px;
+                        border: 2px solid orangered;
+                        border-radius: 100%;
+                        margin: -5px 10px 0 10px;
+                        }
+                        .second-line{
+                            border: 1px solid orangered;
+                            width: 60px;
+                            height: 1px;
+                        }
+                    }
+                }
+                .leading{
+                    display: block;
+                    width: 100%;
+                    margin: 50px auto;
+                    .first-container{
+                        margin-right:   30px;
+                        text-align: left;
+                        p{
+                            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+                            font-size: 20px;
+                            margin-top: 10px;
+                        }
+                        h2{
+                            font-family: monospace;
+                            font-weight: bold;
+                           color: #000;
+                        }
+                    }
+                    .second-container{
+                        text-align: center;
+                    }
+                }
+                
+            }
+            .numbers{
+                overflow: hidden;
+                background-image: url("./../image/background1.jpeg");
+                background-size: cover;
+                background-repeat: no-repeat;
+                width: 100%;
+                height: 500px;
+                position: relative;
+                .numbers-container{
+                    .numbers-flex{
+                        display: block;
+                        width: 100%;
+                        margin: 10px 0;
+                        padding: 50px;
+                        
+                        .col{
+                            display: flex;
+                            margin-top: 10px;
+                            color: #fff;
+                            font-weight: bold;
+                            position: relative;
+                           .number-el{
+                               font-size: 49px;
+                               font-family: monospace;
+                           }
+                           p{
+                               margin-top: 15px;
+                               position: absolute;
+                               left: 20%;
+                           }
+                           .satisfy{
+                            margin-left: 55px;
+                           }
+                           .professional{
+                               margin-left: 30px;
+                           }
+                        }
+                    }
+                    .above-lines-container{
+                        display: block;
+                        position: absolute;
+                        top: 100px;
+                        width: 100%;
+                        div{
+                            width: 50px;
+                            height: 3px;
+                            border: 2px solid #fff;
+                            &:first-child{
+                                margin-left: 60px;
+                                margin-top: 0px;
+                                margin-bottom: 15px!important;
+                            }
+                            &:last-child{
+                                margin-left: 60px;
+                                margin-top: 80px;
+                            }
+                            &:nth-child(2){
+                                margin-left: 54px;
+                                margin-top: 60px;
+                            }
+                            &:nth-child(3){
+                                margin-left: 60px;
+                                margin-top: 80px;
+                            }
+                        }
+                    }
+                }
+            }
+            .contact-us{
+                background-image: url("./../image/background3.png");
+                background-size: cover;
+                background-repeat: no-repeat;
+                width: 100%;
+                height: 400px;
+                .contact-us-container{
+                    display: block;
+                    width: 90%;
+                    margin: 0 auto;
+                    text-align: center;
+                    padding: 35px 10px;
+                    
+                    .first-contact{
+                        h3{
+                            font-size: 30px;
+                            font-family: monospace;
+                            font-weight: bold;
+                            
+                            margin-bottom: 20px;
+                            color: #fff;
+                        }
+                        p{
+                            font-family:Arial, Helvetica, sans-serif;
+                            font-size: 17px;
+                            color: #fff;
+                        }
+                    }
+                    .second-contact{
+                        a{
+                            display: block;
+                            text-decoration: none;
+                            width: 150px;
+                            text-align: center;
+                            margin: 10px auto;
+                            padding: 10px;
+                            background-color: #fff;
+                            color: #000;
+                            border-radius: 100px;
+                            &:hover{
+                                background-color: #000;
+                                color: #fff;
+                                transition: 0.8s ease-in-out;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+        .core{
+            margin-top: 50px;
+            h4{
+                color: orangered;
+                text-align: center;
+                font-family: monospace;
+            }
+            .line-container{
+                display: flex;
+                justify-content: center;
+                text-align: center;
+                margin-top: 30px;
+                .first-line{
+                    border: 1px solid orangered;
+                    width: 50px;
+                    height: 1px;
+                }
+                .circle{
+                width: 10px;
+                height: 10px;
+                border: 2px solid orangered;
+                border-radius: 100%;
+                margin: -5px 10px 0 10px;
+                }
+                .second-line{
+                    border: 1px solid orangered;
+                    width: 50px;
+                    height: 1px;
+                }
+            }
+        }
+        .service-render{
+            .container{
+                .columns{
+                    display: block;
+                    width: 100%;
+                    padding: 20px;
+                    h4,figure{
+                        text-align: center;
+                    }
+                    h4{
+                        color: orangered;
+                    }
+                    .second-col{
+                        // padding: 0 20px;
+                        img{
+                            width: 400px;
+                            margin: 10px 0px;
+                        }
+                    }
+                    p{
+                        text-align: justify;
+                    }
+                }
+            }
+        }
+    }
+}
+.tour{
+    display: none;
+    position: fixed;
+    bottom:20px;
+    left:20px;
+    z-index: 99;
+    height: 70px;
+    width: 70px;
+    border: none;
+    background-color: orangered;
+    border-radius:  100%;
+   
+    .fa-play{
+        position: absolute;
+        top: -7%;
+        right: 5%;
+        left: 5%;
+        font-size: 40px;
+        
+        padding: 18px;
+        color: #fff;
+        
+    }
+}
+footer{
+    .footer-container{
+        width: 100%;
+        background-color: #000;
+        height: 100vh;
+        .columns{
+            display: block;
+            width: 100%;
+            margin: 0px auto;
+            p{
+                color: #fff;
+            }
+             
+            .col{
+                padding: 20px;
+                margin-top: 0px;
+                
+                img{
+                    width: 200px;
+                }
+                ul{
+                    
+                    li{
+                        list-style: none;
+                        text-align: left;
+                    }
+                    a{
+                        display: block;
+                        text-decoration: none;
+                        padding: 10px;
+                        color: #fff;
+                        &:hover{
+                            opacity: 0.5;
+                        }
+                        i{
+                            margin-right: 10px;
+                        }
+                    }
+                }
+                h4{
+                    color: #fff;
+                    margin-left: 40px;  
+                }
+                .col-last{
+                    ul{
+                        li{
+                            color: #fff;
+                            margin-left: 15px;
+                            padding: 10px;
+                            i{
+                                margin-right: 10px;
+                            }
+                        }
+                    }
+                }
+            }
+    
+        }
+    }
+    
+}
+// about us section for small screen ends here
+@media only screen and (min-width: 768px){
+
+
+    // personal bank starts here
+    .information{
+        .container{
+            .grid-container{
+                display: grid;
+                grid-template-columns: 30% 80%;
+                grid-gap: 2em;
+                .grid3{
+                    width: 100%;
+                    .grid3-container{
+                        width: 10%;
+                        p{
+                            width: 80%;
+                        }
+                    }
+                }
+            }
+        }
+    }
+    section.commercial{
+        .container{
+            ul.commercial-list{
+                display: grid;
+                grid-template-columns: auto auto;
+                li{
+                    margin-right: 1em;
+                }
+            }
+        }
+    }
+    section.accounts{
+        .container{
+            ul.accounts-list{
+                display: grid;
+                grid-template-columns: auto auto auto;
+                li{
+                    margin-right: 1em;
+                }
+            }
+        }
+    }
+    // personal bank ends here
+    // contact us section starts here
+    section.bank-details {
+        .container{
+            width: 100%;
+            margin: 0 auto;
+            ul.details{
+                display: flex;
+                justify-content: space-around;
+                width: 100%;
+                
+                li{ 
+                   
+                    h4{
+                        font-size: 15px!important;
+                    }
+                }
+                
+            }
+        }
+    }
+    
+
+
+    // about us styling 768px starts here
+    nav{
+        .navigation-bar{
+            .bank-info{
+                background-color: rgb(36, 31, 31);
+                ul.phone{
+                    display: flex;
+                    li{
+                        list-style: none;
+                        margin-left: 20px;
+                        a{
+                            text-decoration: none;
+                            display: block;
+                            margin-right: 50px;
+                            padding: 5px;
+                            color: #fff;
+    
+                        }
+                    }
+                }
+            }
+        }
+        .navigation-list{
+            position: fixed;
+            background-color: #fff;
+            width: 100%!important;
+            opacity: 0.9;
+            z-index: 99;
+            .list-container{
+                display: flex;
+                width: 100%;
+                margin: 0 auto;
+                #open-nav-btn{
+                    display: none;
+                }
+            }
+           .brand-logo{
+               img{
+                   width: 200px;
+               }
+            }
+            ul.list{
+                position: unset;
+                display: flex;
+                justify-content: center;
+                text-align: center;
+                align-items: center;
+                width: 100%;
+                height: unset;
+                background: none;
+                transition: 0.1s;
+                z-index: 99;
+
+                li{
+                    list-style: none;
+                    margin-top: 60px;
+                }
+                a{
+                    display: block;
+                    text-decoration: none;
+                    
+                    padding: 20px;
+                    color: #000;
+                    &:hover{
+                        color: orangered;
+                    }
+                }
+                .online{
+                    background-color: orangered;
+                    border-radius:  100px;
+                    width: 170px;
+                    height: 50px;
+                    margin-top: auto;
+                    a{
+                        display: block;
+                        color: #fff;
+                       
+                        padding:  10px 0;
+                        border: none;
+                        i{
+                            margin-right: 8px;
+                        }
+                    }
+                    &:hover{
+                        background-color: #000;
+                    }
+                   
+                }
+            }
+        }
+    } 
+    section.about-info{
+        .aboutUs-container{
+            overflow: hidden;
+            background-image: url('./../image/Inner-Banner-Background-Image-1.jpeg');
+            background-repeat: no-repeat;
+            background-size: cover;
+            margin-top: 205px;
+            height: 200px;
+            .container{
+                margin-left: 300px;
+                padding: 20px;
+                .aboutUs{
+                    p{
+                        font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+                        font-size: 50px;
+                        font-weight: bold;
+                        color: #000;
+                    }
+                }
+                .home{
+                    a{
+                        display: inline-block;
+                        text-decoration: none;
+                        margin-top: 50px;
+                        color: #000;
+                        &:hover{
+                            opacity: 0.5;
+                        }
+                    }
+                    span{
+                        i{
+                            margin-right:  5px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+    article{
+        .container{
+            width: 100%;
+            margin: 0 auto;
+            .brand-container{
+                display: grid;
+                grid-template-columns: auto auto;
+                width: 70%;
+                margin: 50px auto;
+                .first{
+                    margin-right: 100px;
+                    .aboutus{
+                        text-align: center;
+                        h4{
+                            font-size: 20px;
+                            color: orangered;
+                            font-weight: bold;
+                        }
+                        h3{
+                            font-size: 35px;
+                            color: orangered;
+                            font-weight: bold;
+                        }
+                    }
+                }
+                .line-container{
+                    display: flex;
+                    justify-items: center;
+                    margin: 20px 0 0 30px;;
+                    .first-line{
+                        border: 1px solid orangered;
+                        width: 70px;
+                        height: 1px;
+                       
+                    }
+                    .circle{
+                        width: 10px;
+                        height: 10px;
+                        border: 2px solid orangered;
+                        border-radius: 100%;
+                        margin: -5px 10px 0 10px;
+                    }
+                    .second-line{
+                        border: 1px solid orangered;
+                        width: 70px;
+                        height: 1px;
+                    }
+                }
+                .second{
+                    p{
+                        font-size: 18px;
+                    }
+                }
+            }
+            
+        }
+        .review{
+            .review-container{
+                .container{
+                    width: 100%;
+                    ul.rev{
+                        display: flex;
+                        justify-content: center;
+                        li{
+                            list-style: none;
+                            width: 350px;
+                            text-align: center;
+                            margin: 15px 10px;
+                            padding: 50px 30px;
+                            background-color: #f9f9f9 ;
+                            box-sizing: border-box;
+                            h4{
+                                color: orangered;
+                            }
+                        }
+                    }
+                    .company-overview{
+                        text-align: center;
+                        margin-top: 80px;
+                        h3{
+                            color: orangered;
+                            font-size: 19px;
+                        }
+                        .line-container{
+                            display: flex;
+                            justify-content: center;
+                            text-align: center;
+                            margin-top: 30px;
+                            .first-line{
+                                border: 1px solid orangered;
+                                width: 130px;
+                                height: 1px;
+                            }
+                            .circle{
+                            width: 10px;
+                            height: 10px;
+                            border: 2px solid orangered;
+                            border-radius: 100%;
+                            margin: -5px 10px 0 10px;
+                            }
+                            .second-line{
+                                border: 1px solid orangered;
+                                width: 130px;
+                                height: 1px;
+                            }
+                        }
+                    }
+                    .leading{
+                        display: grid;
+                        grid-template-columns: auto auto;
+                        justify-content: center;
+                        width: 100%;
+                        margin: 50px auto;
+                        .first-container{
+                            text-align: left;
+                            p{
+                                font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+                                font-size: 20px;
+                                margin-top: 10px;
+                            }
+                            h2{
+                                font-family: monospace;
+                                font-weight: bold;
+                                color: #000;
+                            }
+                        }
+                        .second-container{
+                            width: 100%;
+                            
+                        }
+                    }
+                    
+                }
+                .numbers{
+                    background-image: url("./../image/background1.jpeg");
+                    background-size: cover;
+                    background-repeat: no-repeat;
+                    width: 100%;
+                    height: 200px;
+                    .numbers-container{
+                        position: relative;
+                        .numbers-flex{
+                            display: flex;
+                            justify-content: center;
+                            justify-items: center;
+                            width: 100%;
+                            margin: 0px auto;
+                            padding: 50px;
+                            
+                            .col{
+                                display: flex;
+                                margin-top: 10px;
+                                color: #fff;
+                                font-weight: bold;
+                                position: relative;
+                               .number-el{
+                                   font-size: 49px;
+                                   font-family: monospace;
+                               }
+                               p{
+                                   margin-top: 15px;
+                                   position: absolute;
+                                   left: 30%;
+                               }
+                               .satisfy{
+                                margin-left: 55px;
+                               }
+                               .professional{
+                                   margin-left: 30px;
+                               }
+                            }
+                        }
+                        .above-lines-container{
+                            position: absolute;
+                            top: 0;
+                            display: flex;
+                            width: 80%;
+                            justify-content: space-around   ;
+                            margin-bottom: 10px;
+                            text-align: center;
+                            div{
+                                
+                                width: 50px;
+                                height: 3px;
+                                border: 2px solid #fff;
+                                
+                                margin-bottom: 10px;
+                                &:first-child {
+                                    margin-top: 70px;
+                                }
+                                &:last-child{
+                                    margin-left: 200px;
+                                   margin-top: 70px;  
+                                }
+                                &:nth-child(2){
+                                    margin-left: 210px;
+                                    margin-top: 70px;   
+                                }
+                                &:nth-child(3){
+                                    margin-left: 200px;
+                                    margin-top: 70px;
+                                }
+                            }
+                        }
+                    }
+                }
+                .contact-us{
+                    background-image: url("./../image/background3.png");
+                    background-size: cover;
+                    background-repeat: no-repeat;
+                    width: 100%;
+                    height: 350px;
+                    .contact-us-container{
+                        display: flex;
+                        justify-content: space-around;
+                        text-align: left;
+                        width: 100%;
+                        margin: 0 auto;
+                        padding: 50px;
+                        
+                        .first-contact{
+                            h3{
+                                font-size: 32px;
+                                font-family: monospace;
+                                font-weight: bold;
+                                margin-top: 80px;
+                                margin-bottom: 20px;
+                                color: #fff;
+                            }
+                            p{
+                                font-family:Arial, Helvetica, sans-serif;
+                                font-size: 15px;
+                                color: #fff;
+                            }
+                        }
+                        .second-contact{
+                            width: 100%;
+                            a{
+                                display: block;
+                                text-decoration: none;
+                                margin: 100px 0 0 150px;
+                                padding: 10px 10px;
+                                background-color: #fff;
+                                color: #000;
+                                border-radius: 100px;
+                                &:hover{
+                                    background-color: #000;
+                                    color: #fff;
+                                    transition: 0.8s ease-in-out;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+            .core{
+                margin-top: 50px;
+                h4{
+                    color: orangered;
+                    text-align: center;
+                    font-family: monospace;
+                }
+                .line-container{
+                    display: flex;
+                    justify-content: center;
+                    text-align: center;
+                    margin-top: 30px;
+                    .first-line{
+                        border: 1px solid orangered;
+                        width: 130px;
+                        height: 1px;
+                    }
+                    .circle{
+                    width: 10px;
+                    height: 10px;
+                    border: 2px solid orangered;
+                    border-radius: 100%;
+                    margin: -5px 10px 0 10px;
+                    }
+                    .second-line{
+                        border: 1px solid orangered;
+                        width: 130px;
+                        height: 1px;
+                    }
+                }
+            }
+            .service-render{
+                .container{
+                    .columns{
+                        display: grid;
+                        grid-template-columns: 25% 50% 25%;
+                        grid-gap: 1em;
+                        width: 100%;
+                        h4{
+                            color: orangered;
+                        }
+                        figure{
+                            text-align: right;
+                        }
+                        .second-col{
+                            width: 100%;
+                            img{
+                                width:450px;
+                                margin-left: 5px;
+                            }
+                        }
+                        p{
+                            text-align: left;
+                            font-size: 18px;
+                        }
+                    }
+                }
+            }
+            
+        }
+        
+    }
+    footer{
+        .footer-container{
+            width: 100%!important;
+            background-color: #000;
+            height: 500px;
+            .columns{
+                display: flex;
+                width: 100%;
+                margin: 0px auto;
+                padding: 10px;
+                p{
+                    color: #fff;
+                }
+                 
+                .col{
+                    padding: 20px;
+                    margin-top: 50px;
+                    
+                    img{
+                        width: 200px;
+                    }
+                    ul{
+                        
+                        li{
+                            list-style: none;
+                            text-align: left;
+                        }
+                        a{
+                            display: block;
+                            text-decoration: none;
+                            padding: 10px;
+                            color: #fff;
+                            &:hover{
+                                opacity: 0.5;
+                            }
+                            i{
+                                margin-right: 10px;
+                            }
+                        }
+                    }
+                    h4{
+                        color: #fff;
+                        margin-left: 40px;  
+                    }
+                    .col-last{
+                        ul{
+                            li{
+                                color: #fff;
+                                margin-left: 15px;
+                                padding: 10px;
+                                i{
+                                    margin-right: 10px;
+                                }
+                            }
+                        }
+                    }
+                }
+        
+            }
+        }
+        
+    }
+    // about us styling 768px ends here
+
+}
+@media only screen and (min-width: 1200px) {
+   
+ 
+    
+}
+@media only screen and (min-width: 1400px) {
+
+
+    section.commercial{
+        .container{
+            ul.commercial-list{
+               width: 70%;
+               margin: 0 auto;
+               margin-left: 500px;
+            }
+        }
+    }
+    // about us styling 1400px starts here
+    section.about-info{
+        .aboutUs-container{
+            .container{
+                width: 50%!important;
+                margin: 0 auto;
+            }
+        }
+    }
+    .review-container{
+        .contact-us{
+            .contact-us-container{
+               width: 60%!important;
+               margin: 0 auto !important;
+               .second-contact{
+                   width: 80%!important;
+               }
+            }
+        }
+
+    }
+    
+
+    .numbers{
+        .numbers-container{
+            width: 60%;
+            margin: 0 auto;
+            .col{
+                p{
+                   margin-left: -30px;
+                }
+                .satisfy{
+                    margin-left: 30px!important;
+                }
+                .professional{
+                    margin-left: 10px!important;
+                }   
+            }
+        }
+    }
+    footer{
+        .footer-container{
+            width: 1200px;
+            margin: 0 auto;
+            .columns{
+                width: 60%
+            }
+        }
+       
+    }
+    .service-render{
+        .container{
+            width: 1200px;
+            margin: 0 auto;
+            .second-col{
+                padding: 0 80px;
+                
+            }
+            
+        }
+    }
+//  about us styling 1400px ends here
+    
+}

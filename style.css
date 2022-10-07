@@ -1,0 +1,358 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.spinal{
+    display: none;
+    text-align: center;
+    margin: 0 auto;
+    border: 4px solid #fff;
+    border-top: 4px solid orangered;
+    width: 30px;
+    height: 30px;
+    border-radius: 100%;
+    -webkit-animation: spin linear infinite;
+    animation: spin 0.6s linear infinite
+}
+
+@-webkit-keyframes spin{
+    0%{transform: rotate(0deg)}
+    100%{transform: rotate(360deg)}
+}
+@keyframes spin{
+    0%{transform: rotate(0deg)}
+    100%{transform: rotate(360deg)}
+}
+.spinal2{
+    display: none;
+    text-align: center;
+    margin: 0 auto;
+    border: 4px solid #fff;
+    border-top: 4px solid orangered;
+    width: 30px;
+    height: 30px;
+    border-radius: 100%;
+    -webkit-animation: spin linear infinite;
+    animation: spin 0.6s linear infinite
+}
+
+@-webkit-keyframes spin{
+    0%{transform: rotate(0deg)}
+    100%{transform: rotate(360deg)}
+}
+@keyframes spin{
+    0%{transform: rotate(0deg)}
+    100%{transform: rotate(360deg)}
+}
+.container{
+    width: 100%;
+    text-align: center;
+}
+img{
+    width: 180px;
+    opacity: 0.1;
+}
+label{
+    display: none;
+}
+.form-group h3{
+    background-color: #ccc;
+    padding: 12px 20px 12px 5px;
+    color: black;
+    width: 250px;
+    text-align: left;
+    margin: 15px auto;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+.form-group h4{
+    font-size: 20px;
+    color: #000f00;
+    
+}
+.form-group .instructions{
+    margin: 0 auto;
+    width: 250px;
+}
+.form-group p span{
+    color: orangered;
+    font-weight: bold;
+}
+.container .row .login-container{
+  width: 100%;
+  margin: 0;
+  padding: 0;
+}
+.form-login{
+    position: relative;
+    width: 320px;
+    margin: 0 auto;
+    border: 1px solid #ccc;
+    height: 620px;
+    border-radius: 15px;
+    box-sizing: border-box;
+}
+input[type="text"], input[type="password"]{
+    width: 90%;
+    padding: 9px;
+    margin-top: 5px;
+    border: 1px solid #ccc;
+    border-radius: 0px;
+    box-sizing: border-box;
+}
+.form-group button{
+    width: 90%;
+    padding: 15px;
+    background-color: orangered;
+    font-weight: bold;
+    color: #fff;
+    font-size: 20px;
+    margin-top: 5px;
+    border: none;
+    cursor: pointer;
+    
+}
+.form-group .form-login .links a{
+    display: block;
+    text-decoration: none;
+    text-align: left;
+    margin: 10px 0 0px 15px;
+    color: #ccc;
+}
+.form-group .form-login .links a:hover{
+    color: orangered;
+    text-decoration: underline;
+}
+.form-group .form-login .register-link a{
+    display: block;
+    text-align: left;
+    margin-left: 15px;
+    text-decoration: none;
+    color: #ccc;
+}
+.register-link h5{
+    font-size: 15px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    margin-bottom: 10px;
+    text-align: center;
+    margin: 15px 0 -25px 0;
+}
+.register-link p{
+    background-color: orangered;
+    color: #fff;
+    padding: 7px 15px;
+    width: 50%;
+    margin: 25px auto;
+    text-align: center;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 13px;
+    font-weight: bold;
+    border-radius: 10px;
+}
+.rember-me{
+    text-align: left;
+    margin: 5px auto;
+    font-size: 13px;
+    text-align: center;
+}
+span#pass_error,span#user_error{
+    display: block;
+    color: red;
+   
+}
+.column{
+    width: 250px;
+    margin: 10px auto;
+    background-color: #f6f6f6;
+    padding: 15px;
+    text-align: left;
+    border-radius: 10px;
+}
+@media (min-width: 768px){
+    .column{
+        margin:10px;
+    }
+    .footer{
+        display: flex;
+       justify-content: space-between;
+        
+    }
+}
+.form-group .column h5{
+    font-size: 18px;
+    font-weight: bold;
+    margin-bottom: 5px;
+    margin-top: 5px;
+}
+.form-group .column p{
+    width: 100%;
+    font-size: 13px;
+    text-align: left;
+    font-weight: normal;
+    color: #ff4500;
+}
+.form-group .column a{
+    text-decoration: none;
+    background-color: #000f00;
+    color: white;
+    padding: 5px 7px;
+    border-radius: 10px;
+}
+.form-group .column a:hover{
+    text-decoration: underline;
+}
+.footer{
+    display: flex;
+    background-color: orangered;
+    margin-top: 50px;
+    width: 300px;
+    margin: 50px auto 0 auto;
+    padding: 5px;
+    
+}
+.footer hr{
+    height: 15px;
+    background-color: #fff;
+}
+.form-group .footer a{
+    text-decoration: none;
+    display: block;
+    padding: 10px;
+    font-size: 12px;
+    color: #fff;
+}
+.form-group .footer a:hover{
+    text-decoration: underline;
+}
+section.mod .login-modal .modal-con{
+    padding: 16px;
+}
+section.mod .login-modal{
+    display: none;
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    top: 0px;
+    left: 0;
+    background-color: rgb(0,0,0);
+    background-color: rgba(0,0,0,0.4);
+    z-index: 99;
+}
+section.mod .login-modal button{
+    background-color: blue;
+    width: 100%;
+    padding: 16px 18px;
+    border: none;
+    color: white;
+    font-weight: bold;
+}
+section.mod .login-modal .modal-content{
+    width: 65%;
+    height: 300px;
+    margin: 66px auto 15px auto;
+    text-align: center;
+    background-color: #fff;
+    border: 1px solid #ccc;
+    -webkit-animation: animatezoom;
+    animation: animatezoom  0.6s;
+}
+@-webkit-keyframes animatezoom{
+    from {transform: scale(0)}
+    to{transform: scale(1)}
+}
+@keyframes animatezoom {
+    from {transform: scale(0)}
+    to{transform: scale(1)};
+}
+
+ section.mod .login-modal .modal-content input[type="email"]{
+    width: 100%;
+    padding:  5px 0px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    margin: 5px 0;
+}
+section.mod .login-modal .modal-content button{
+    margin-bottom: 10px;
+    padding: 10px 10px;
+    border-radius: 10px;
+}
+.modal-content span.close-btn{
+    float: right;
+    font-size: 50px;
+    color: #f00;
+    cursor: pointer;
+    margin-right: -15px;
+    margin-top: -25px;
+}
+.modal-content span.close-btn:hover{
+    color:#000;
+}
+
+@media only screen and (min-width:768px) {
+
+    .login-modal .modal-content{
+        width: 30%!important;
+        height: 50%;
+    }
+    .form-group h3{
+        padding: 12px 20px 12px 5px;
+        color: black;
+        width: 500px;
+        text-align: left;
+        margin: 15px auto;
+        font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    }
+  
+    .form-group .form-login .instructions{
+        width: 400px;
+        margin-bottom: 10px;
+    }
+    .form-login{
+        width: 500px;
+        height: 550px;
+        margin: 0 auto;
+    }
+
+    input[type="text"], input[type="password"]{
+        width: 40%;
+        text-align: left; 
+    }
+    .form-group button{
+        width: 40%;
+        margin-top: 10px;
+        display: block;
+        margin: 10px auto;
+    }
+    .form-group .form-login .links a{
+        display: block;
+        text-align: center;
+        
+    }
+    
+    label{
+        display: inline-block;
+        margin-right: 50px;
+        margin-left: -80px;
+        width: 5%;
+    }
+    .form-login .register-link {
+        text-align: center;
+    }
+    .rember-me{
+        text-align: center;
+        
+    }
+    .column-container{
+        display: flex;
+        width: 500px;
+        margin: 10px auto;
+    }
+    .form-group .footer{
+        width: 500px;
+        text-align: center;
+        margin-top: 260px;
+    }
+    
+}
